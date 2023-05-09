@@ -12,11 +12,21 @@ const StatisticsApp = (props) => {
     bad: 0,
   });
 
+  const [h1Color, setH1Color] = useState('black');
+
   const handleLeaveFeedback = (feedbackType) => {
     setState((prevState) => ({
       ...prevState,
       [feedbackType]: prevState[feedbackType] + 1,
     }));
+
+    if (feedbackType === 'good') {
+      setH1Color('green');
+    } else if (feedbackType === 'bad') {
+      setH1Color('red');
+    } else if (feedbackType === 'neutral') {
+    setH1Color('black');
+  }
   };
 
   const totalFeedback = state.good + state.neutral + state.bad;
@@ -26,7 +36,7 @@ const StatisticsApp = (props) => {
 
   return (
     <div>
-      <h1>Please Leave Feedback</h1>
+      <h1 style={{ color: h1Color }}>Please Leave Feedback</h1>
       <Section title="Feedback Options">
         <FeedbackOptions
           options={['good', 'neutral', 'bad']}

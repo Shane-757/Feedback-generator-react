@@ -1,0 +1,20 @@
+.GoodStat{
+    color: green;
+    text-shadow: black -20px -20px 8px;
+}
+.NeutralStat{
+    color: orange;
+    text-shadow: black -20px -20px 8px;
+}
+.BadStat{
+    color: red;
+    text-shadow: black -20px -20px 8px;
+}
+.TotalStat{
+    color: blue;
+    text-shadow: black -20px -20px 8px;
+}
+.PositivePercentageStat{
+    color: purple;
+    text-shadow: black -20px -20px 8px;
+}

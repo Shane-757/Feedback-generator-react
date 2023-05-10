@@ -12,18 +12,15 @@
 }
 .good-button:hover {
     background-color: #007404;
-    /* Change this to the desired hover color for the good button */
     cursor: pointer;
 }
 
 .neutral-button:hover {
     background-color: #ffcc80;
-    /* Change this to the desired hover color for the neutral button */
     cursor: pointer;
 }
 
 .bad-button:hover {
     background-color: #f32323;
-    /* Change this to the desired hover color for the bad button */
     cursor: pointer;
 }

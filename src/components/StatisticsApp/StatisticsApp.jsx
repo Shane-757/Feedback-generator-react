@@ -1,10 +1,9 @@
 import React, { useState } from 'react';
 import Statistics from 'components/Statistics/Statistics';
-//import FeedbackOptions from 'components/FeedbackOptions/FeedbackOptions';
 import Section from 'components/SectionTitle/SectionTitle';
 import Notification from 'components/Notifications/Notifications';
 import FeedbackHandler from 'components/FeedbackHandler/FeedbackHandler';
-//import PropTypes from 'prop-types';
+
 
 const StatisticsApp = (props) => {
   const [state, setState] = useState({
@@ -46,7 +45,6 @@ const StatisticsApp = (props) => {
     </div>
   );
 };
-//there is no need to use PropTypes in this component, but I did it for practice
-//StatisticsApp.propTypes = {};
+
 
 export default StatisticsApp;
